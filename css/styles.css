@@ -6,9 +6,21 @@
 body{font-family: Roboto;
     color: #757575;}
 
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;}
+
+ul, ol{margin: 0; padding-left: 0;}
+
 .list{list-style: none;}
 
 .link{text-decoration: none;}
+
+.conteiner{width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;}
 
 .header-list:focus,
 .header-list:hover{
@@ -17,6 +29,12 @@ body{font-family: Roboto;
 
 .header-link :focus,
 .header-link :hover {
+    color: var(--acent-color--);
+    cursor: pointer;
+}
+
+.footer-link :focus,
+.footer-link :hover {
     color: var(--acent-color--);
     cursor: pointer;
 }
@@ -44,9 +62,20 @@ body{font-family: Roboto;
     letter-spacing: 0.02em;
     color: #757575;}
 
+.header{padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px;
+    border-bottom: rgba(236, 236, 236, 1);}
+
 /*--MAIN--*/
 
-.hero{background-color: #2F303A;}
+.hero{
+    background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
 .hero-title{font-weight: 900;
     font-size: 44px;
     line-height: calc(60/44);
@@ -55,7 +84,10 @@ body{font-family: Roboto;
     text-transform: uppercase;
     color: var(--second-btn-color--);}
 
-.hero-btn{cursor: pointer;}
+.hero-btn{cursor: pointer;
+    display: block;
+    margin-top: 30px;
+    margin: 0 auto;}
 .hero-btn{font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
@@ -64,16 +96,21 @@ body{font-family: Roboto;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--second-btn-color--);
-    background-color: #2196F3;}
+    background-color: #2196F3;
+    }
 
     /*--Content--*/
+
+    .content{padding-top: 94px;
+    padding-bottom: 94px;}
 
    .content-title{font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--first-title-color--);}
+    color: var(--first-title-color--);
+    margin-bottom: 10px;}
    .content-text{
     font-size: 14px;
     line-height: calc(24/14);
@@ -81,21 +118,28 @@ body{font-family: Roboto;
 
 /*--work--*/
 
+.work{padding-bottom: 94px;}
+
 .work-title{font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
-    color:var(--first-title-color--);}
+    color:var(--first-title-color--);
+    margin-bottom: 50px;}
 
 /*--Comand--*/
+
+.comand{padding-top: 94px;
+    padding-bottom: 94px;}
 
 .comand-title{font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--first-title-color--);}
+    color: var(--first-title-color--);
+    margin-bottom: 50px;}
 
 .comand-subtitle{font-weight: 500;
     font-size: 16px;
@@ -112,7 +156,11 @@ body{font-family: Roboto;
 
 /*--footer--*/
 
-.footer{background-color: #2F303A;}
+
+.footer{background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .logo-footer{font-family: 'Raleway';
     font-style: normal;
@@ -135,6 +183,13 @@ body{font-family: Roboto;
     letter-spacing: 0.03em;
     color: var(--second-btn-color--);}
 
+.footer-link{font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: #757575;}
+    
 /*---portfolio--*/
 
 .visually-hidden {
@@ -171,3 +226,6 @@ body{font-family: Roboto;
 .portfolio-text{font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;}
+
+.portfolio{padding-top: 94px;
+padding-bottom: 94px;}
