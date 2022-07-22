@@ -22,44 +22,50 @@
   </head>
   <body>
     <header class="header">
-      <nav>
+      <div class="conteiner">
         <a href="./index.html" class="logo link"
           ><span class="logo-acent">Web</span>Studio</a
         >
-        <ul class="header-list list">
-          <li><a href="./index.html" class="header-list link">Студия</a></li>
+        <nav>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="./index.html" class="header-list link">Студия</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="header-list link">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-list link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-link list">
           <li>
-            <a href="./portfolio.html" class="header-list link">Портфолио</a>
+            <a href="mailto:info@devstudio.com" class="header-link link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li><a href="" class="header-list link">Контакты</a></li>
+          <li>
+            <a href="tel:+380961111111" class="header-link link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <ul class="header-link list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="header-link link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="header-link link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="portfolio">
         <div class="conteiner">
           <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="list">
+          <ul class="btn-item list">
             <li><button type="button" class="list-btn">Все</button></li>
             <li><button type="button" class="list-btn">Веб-сайты</button></li>
             <li><button type="button" class="list-btn">Приложенияе</button></li>
             <li><button type="button" class="list-btn">Приложения</button></li>
             <li><button type="button" class="list-btn">Маркетинг</button></li>
           </ul>
-          <ul class="list">
-            <li>
+          <ul class="portfolio-item list">
+            <li class="portfolio-list">
               <img
                 src="./img/portfolio/технокряк-min.jpg"
                 alt="Технокряк"

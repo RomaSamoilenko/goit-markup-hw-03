@@ -11,9 +11,15 @@ p, h1, h2, h3, h4, h5, h6{
 
 ul, ol{margin: 0; padding-left: 0;}
 
+
+
 .list{list-style: none;}
 
 .link{text-decoration: none;}
+
+img {
+    display: block;
+}
 
 .conteiner{width: 100%;
     max-width: 1200px;
@@ -49,6 +55,27 @@ ul, ol{margin: 0; padding-left: 0;}
     color: #000000;}
 .logo-acent{color: var(--acent-color--)}
 
+
+
+.logo{display: flex;
+margin-right: 93px;}
+
+.header-list{display: flex;}
+
+
+.header-link{display: flex;
+margin-left: auto;
+align-items: center;
+gap: 50px;}
+
+.header>.conteiner {
+    display: flex;
+   align-items: center;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
 .header-list{font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
@@ -82,21 +109,26 @@ ul, ol{margin: 0; padding-left: 0;}
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--second-btn-color--);}
+    color: var(--second-btn-color--);
+    margin: 30px auto;
+    width: 696px;
+    height: 120px}
 
 .hero-btn{cursor: pointer;
     display: block;
-    margin-top: 30px;
-    margin: 0 auto;}
+    margin: 0 auto;
+border: 0px;}
+
 .hero-btn{font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--second-btn-color--);
     background-color: #2196F3;
+    width: 200px;
+    height: 50px;
     }
 
     /*--Content--*/
@@ -116,9 +148,16 @@ ul, ol{margin: 0; padding-left: 0;}
     line-height: calc(24/14);
     letter-spacing: 0.03em;}
 
+    .content-item{display: flex;
+    gap: 30px;}
+
 /*--work--*/
 
 .work{padding-bottom: 94px;}
+
+.work-item {display: flex;
+gap: 30px;
+width: 1170px;}
 
 .work-title{font-weight: 700;
     font-size: 36px;
@@ -146,13 +185,19 @@ ul, ol{margin: 0; padding-left: 0;}
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--first-title-color--);}
+    color: var(--first-title-color--);
+margin-top: 30px;}
 
 .comand-text{
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+margin-top: 10px;}
+
+.comand-item {display: flex;
+column-gap: 30px;}
+.comand-item {width:calc( (100% - 60px) / 3);}
 
 /*--footer--*/
 
@@ -162,13 +207,17 @@ ul, ol{margin: 0; padding-left: 0;}
     padding-bottom: 60px;
 }
 
+.logo-footer{display: flex;
+margin-bottom: 20px;}
+
 .logo-footer{font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
     letter-spacing: 0.03em;
-    color: var(--second-btn-color--);}
+    color: var(--second-btn-color--);
+}
 
 .adress {
     font-size: 14px;
@@ -183,12 +232,14 @@ ul, ol{margin: 0; padding-left: 0;}
     letter-spacing: 0.03em;
     color: var(--second-btn-color--);}
 
+
 .footer-link{font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: #757575;}
+    color: #757575;
+margin-bottom: 9px;}
     
 /*---portfolio--*/
 
@@ -204,6 +255,11 @@ ul, ol{margin: 0; padding-left: 0;}
     clip-path: inset(50%);
     margin: -1px;}
 
+.btn-item{display: flex;
+gap: 8px;
+justify-content: center;
+margin-bottom: 50px;
+}
 
 .list-btn{font-weight: 500;
     font-size: 16px;
@@ -211,7 +267,9 @@ ul, ol{margin: 0; padding-left: 0;}
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--first-title-color--);
-    cursor: pointer;}
+    cursor: pointer;
+    border: 0px;
+margin: 0 auto;}
 
 .list-btn:hover,
 .list-btn:focus{
@@ -222,10 +280,16 @@ ul, ol{margin: 0; padding-left: 0;}
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
-    color: var(--first-title-color--);}
+    color: var(--first-title-color--);
+}
 .portfolio-text{font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;}
 
 .portfolio{padding-top: 94px;
 padding-bottom: 94px;}
+
+.portfolio-item{display: flex;
+flex-wrap: wrap;
+}
+.portfolio-list{width: calc((100% -30px)/3);}
